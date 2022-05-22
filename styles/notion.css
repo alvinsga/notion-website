@@ -353,22 +353,22 @@
 }
 
 .notion-header {
-  /* background: hsla(0, 0%, 100%, 0.8); */
-  /* backdrop-filter: saturate(180%) blur(16px); */
+  background: hwb(0 100% 0% / 0.8);
+  backdrop-filter: saturate(180%) blur(16px);
 }
 
 .dark-mode .notion-header {
   background: transparent;
-  /* box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-  backdrop-filter: saturate(180%) blur(8px); */
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(8px);
 }
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .dark-mode .notion-header {
     background: hsla(203, 8%, 20%, 0.8);
   }
-} */
+}
 
 .notion-bookmark:hover {
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
