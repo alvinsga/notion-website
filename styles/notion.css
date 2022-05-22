@@ -104,6 +104,7 @@
   padding: 10px;
 }
 
+
 /* only target safari */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   _::-webkit-full-page-media,
@@ -381,4 +382,25 @@
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
+}
+
+
+/* Added to remove background color from page */
+.notion-page-link:hover {
+  background: none
+}
+
+.notion-list-item:hover{
+  background-color: var(--bg-color-0);
+}
+
+/* Added to make list tiles bigger */
+
+.notion-page-title-text{
+  border-bottom: none;
+  padding-left: 10px;
+}
+
+.notion-list-item{
+  padding: 20px 5px;
 }
